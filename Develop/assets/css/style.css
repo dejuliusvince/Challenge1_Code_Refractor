@@ -8,23 +8,25 @@ body {
     background-color: #d9dcd6;
 }
 
-.header {
+/* Removed the "header" class from my html document and called on the header html tag. Redundancy removed, no need for a "header" class */
+
+header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
 }
 
-.header h1 {
+header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
-.header h1 .seo {
+header h1 .seo {
     color: #d9dcd6;
 }
 
-.header nav {
+header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -32,11 +34,13 @@ body {
     font-size: 20px;
 }
 
-.header nav ul {
+/* Accurately referencing the html selectors makes the nav li elements align properly */
+
+header nav ul {
     list-style-type: none;
 }
 
-.header nav ul li {
+header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
@@ -75,7 +79,7 @@ p {
     margin-left: 20px;
 }
 
-.benefits {
+.all-benefits {
     margin-right: 20px;
     padding: 20px;
     clear: both;
@@ -86,49 +90,19 @@ p {
     background-color: #2589bd;
 }
 
-.benefit-lead {
+/* Consolidated classes with identical specifications; more efficient than rewriting the same code for each section of the aside */
+
+.benefit {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
+.benefit h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
+.benefit img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
@@ -161,15 +135,15 @@ p {
     color: #ffffff;
 }
 
-.search-engine-optimization img {
+.search-engine-optimization figure img {
     max-height: 200px;
 }
 
-.online-reputation-management img {
+.online-reputation-management figure img {
     max-height: 200px;
 }
 
-.social-media-marketing img {
+.social-media-marketing figure img {
     max-height: 200px;
 }
 
